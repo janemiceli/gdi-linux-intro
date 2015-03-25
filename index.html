@@ -1,53 +1,53 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<title>Girl Develop It! Boise</title>
+<head>
+  <meta charset="utf-8">
+  <title>Girl Develop It! Boise</title>
 
-		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-		<meta name="author" content="Girl Develop It">
+  <meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+  <meta name="author" content="Girl Develop It">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/gdidefault.css" id="theme">
 
-		<!--<style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>-->
+  <!--<style> .reveal i.fa { font-family:FontAwesome; font-style: normal; } </style>-->
 
-		<!-- For syntax highlighting -->
-		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
-		<!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
+  <!-- For syntax highlighting -->
+  <!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
+  <!-- dark editor--><link rel="stylesheet" href="lib/css/dark.css">
 
-		<!-- If use the PDF print sheet so students can print slides-->
-		
-		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
-     <link rel="stylesheet" href="lib/css/font-awesome/css/font-awesome.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-	</head>
+  <!-- If use the PDF print sheet so students can print slides-->
 
-	<body>
-		<div class="reveal">
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+  <link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
+  <link rel="stylesheet" href="lib/css/font-awesome/css/font-awesome.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
 
-        <!-- Opening -->
-		<section>
-          <img src = "boise.png" height="220" />
-          <h3>Girl Develop It! Boise</h3>
-		  <ul>
-		  	<li>boise@girldevelopit.com</li>
-			<li>http://girldevelopit.com</li>
-			<li>https://github.com/gdibois</li>
-		  </ul>
-        </section>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <!-- Opening -->
+      <section>
+        <img src = "boise.png" height="220" />
+        <h3>Girl Develop It! Boise</h3>
+        <ul>
+          <li>boise@girldevelopit.com</li>
+          <li>http://girldevelopit.com</li>
+          <li>https://github.com/gdibois</li>
+        </ul>
+      </section>
 
 
-        <!-- Welcome-->
-        <section class="hide-pdf">
-          <h3>Welcome!</h3>
-          <div class = "left-align">
+      <!-- Welcome-->
+      <section class="hide-pdf">
+        <h3>Welcome!</h3>
+        <div class = "left-align">
           <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
           <p class ="green">Some "rules"</p>
           <ul>
@@ -56,197 +56,329 @@
             <li>Help each other</li>
             <li>Have fun</li>
           </ul>
-          </div>
-        </section>
-        
+        </div>
+      </section>
 
-        <section>
-          <h3>Welcome!</h3>
-          <div class= "left-align">
+
+      <section>
+        <h3>Welcome!</h3>
+        <div class= "left-align">
           <p class = "blue">Tell us about yourself.</p>
           <ul>
             <li>Who am I?</li>
             <li>Who are you?</li>
             <li>What do you hope to get out of the class?</li>
           </ul>
-          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>What we will cover today</h3>
+        <ul>
+          <li class ="fragment">What is linux and why should we care?</li>
+          <li class ="fragment">Basics of linux -- the essential commands</li>
+          <li class ="fragment">Installing and Configuring Software</li>
+        </ul>
+      </section>
+
+      <!-- Linux -->
+      <section>
+        <section>
+          <h3>What is Linux?</h3>
+          <p>It's a operating system/group of software</p>
+        </section>
+        <section>
+          <h4>What is an operating system</h4>
+          <p>A way to interact between hardware and software</p>
+          <p>Examples: Windows, OS X, Solaris</p>
+        </section>
+        <section>
+          <h4>What is a distro</h4>
+          <p>A grouping of software often</p>
+          <p>Examples: Debian, Ubuntu, CentOS, Fedora, Gentoo, FreeBSD</p>
+          <p>What makes them different?</p>
+        </section>
+        <section>
+          <h4>Open source software</h4>
+          <p>Free as in Speech, Free as in beer (~Stallman)</p>
+          <p>Software built by open source communities: Linux (all distros), Apache, Mysql, Firefox, Python</p>
+        </section>
+        <section>
+          <h4>What can you use linux for</h4>
+          <p>As a dev box</p>
+          <p>As a platform for applications you write</p>
+          <p>Embedded systems</p>
         </section>
 
+      </section>
+
+      <!-- Connecting to the Instance -->
+      <section>
         <section>
-          <h3>What we will cover today</h3>
-          <ul>
-            <li class ="fragment">What is linux and why should we care?</li>
-            <li class ="fragment">Basics of linux -- the essential commands</li>
-            <li class ="fragment">Installing and Configuring Software</li>
-          </ul>
+          <h3>Connecting with Mac/Linux</h3>
+          <p>Open Terminal</p>
+          <p>ssh user@ip</p>
         </section>
-
-        <!-- Linux -->
         <section>
-            <section>
-                <h3>What is Linux?</h3>
-                <p>It's a operating system/group of software</p>
-            </section>
-            <section>
-                <h4>What is an operating system</h4>
-                <p>A way to interact between hardware and software</p>
-                <p>Examples: Windows, OS X, Solaris</p>
-            </section>
-            <section>
-                <h4>What is a distro</h4>
-                <p>A grouping of software often</p>
-                <p>Examples: Debian, Ubuntu, CentOS, Fedora, Gentoo, FreeBSD</p>
-                <p>What makes them different?</p>
-            </section>
-            <section>
-              <h4>Open source software</h4>
-              <p>Free as in Speech, Free as in beer (~Stallman)</p>
-              <p>Software built by open source communities: Linux (all distros), Apache, Mysql, Firefox, Python</p>
-            </section>
-            <section>
-                <h4>What can you use linux for</h4>
-                <p>As a dev box</p>
-                <p>As a platform for applications you write</p>
-                <p>Embedded systems</p>
-            </section>
-
+          <h3>Connecting with Windows</h3>
+          <p>Download and install putty</p>
+          <p>Type in ip/hostname, click open</p>
         </section>
+      </section>
 
-        <!-- Connecting to the Instance -->
+      <!-- General -->
+      <section>
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Interacting with a program</h3>
+          <p>l vs ls</p>
+          <p>ls vs ls -al</p>
         </section>
-
-        <!-- Navigating -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Tab Completion</h3>
+          <p>Press tab once</p>
+          <p>Press it twice</p>
         </section>
-
-        <!-- Creating Structure-->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Sudo</h3>
+          <p>two types of users, regular and super</p>
+          <p>Best practice is to live as regular</p>
+          <p>And elevate to superuser only when need</p>
+          <p>sudo = super user do</p>
         </section>
-
-        <!-- Editing files -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Reading more</h3>
+          <p>Man Pages</p>
+          <p>Searching the internet</p>
         </section>
+      </section>
 
-        <!-- Installing Software -->
+      <!-- Navigating -->
+      <section>
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Listing Files/Directories</h3>
+          <p>ls</p>
         </section>
-
-        <!-- Configuring Software -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Changing Directories</h3>
+          <p>cd</p>
         </section>
-
-        <!-- Reading Logs -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>.directories</h3>
+          <p>hidden from ls</p>
         </section>
+      </section>
 
-        <!-- Installing Software -->
+      <!-- Creating Structure-->
+      <section>
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>Making directories</h3>
+          <p>mkdir #{name}</p>
         </section>
+      </section>
 
-        <!-- File Permissions -->
+      <!-- Editing files -->
+      <section>
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>cat</h3>
+          <p>cat #{filename}</p>
         </section>
-
-        <!-- Dealing with output -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>nano</h3>
+          <p>nano #{filename}</p>
+          <p>ctl+x</p>
         </section>
-
-        <!-- Environment Variables -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <h3>vim</h3>
+          <p>vim #{filename}</p>
+          <p>Modes??!??</p>
+          <p>`i` to type<p>
+          <p>esc :wq to 'write' and 'quit'</p>
+        </section>
+        <section>
+          <h3>ftp/rsync/etc</h3>
+          <p>A common workflow is to setup autosyncing and edit on your box</p>
+          <p>Can also be used with git/hg/svn/etc</p>
+        </section>
+      </section>
+
+
+      <!-- File Permissions -->
+      <section>
+        <section>
+          <h3>Owner/Group/All</h3>
+          <p>ls -al</p>
+          <p>chown</p>
+        </section>
+        <section>
+          <h3>r/w/x</h3>
+          <p>Read/Write/Execute</p>
+          <p>chmod</p>
+        </section>
+        <section>
+          <h3>Octals</h3>
+          <p>1 = execute</p>
+          <p>2 = write </p>
+          <p>4 = read </p>
+        </section>
+      </section>
+
+      <!-- Installing Software -->
+      <section>
+        <section>
+          <h3>From package manager</h3>
+          <p>Killer feature<p>
+          <p>Different for each distro</p>
+        </section>
+        <section>
+          <h3>ubuntu - apt</h3>
+          <p>sudo apt-get install #{package}</p>
+        </section>
+        <section>
+          <h3>centos/redhat - yum</h3>
+          <p>sudo yum install #{package}</p>
+        </section>
+        <section>
+          <h3>From Source</h3>
+          <p>Why prefer the package manager to source?</p>
+          <p>Why may you need to install from source?</p>
+      </section>
+
+      <!-- Configuring Software -->
+      <section>
+        <section>
+          <h3>Config Files</h3>
+          <p>programs settings</p>
+        </section>
+        <section>
+          <h3>'Configuring a system'</h3>
+          <p>programs settings</p>
+        </section>
+        <section>
+          <h3>edit /etc/hosts</h3>
+          <p>ping madeupurl</p>
+        </section>
+      </section>
+
+      <!-- Reading Logs -->
+      <section>
+        <section>
+          <h3>Where do they live?</h3>
+          <p>/var/log</p>
+          <p>can be configured</p>
+          <p>./</p>
+        </section>
+        <section>
+          <h3>How to read</h3>
+          <p>Favorite text editor</p>
+          <p>cat, less, more</p>
+          <p>tail -f</p>
+        </section>
+      </section>
+
+
+      <!-- Dealing with output -->
+
+      <!-- Environment Variables -->
+      <section>
+        <section>
+          <h3>Inline</h3>
+          <p>thing=foo</p>
+        </section>
+        <section>
+          <h3>bash.rc</h3>
+          <p>export thing=foo</p>
+        </section>
+        <section>
+          <h3>/etc/environment</h3>
+          <p>sets for everyone on system</p>
+        </section>
+        <section>
+          <h3>Special Environment Var</h3>
+          <p>PATH</p>
+          <p>HOME aka ~</p>
+        </section>
+        <section>
+          <h3>Reading Var</h3>
+          <p>echo $PATH</p>
+        </section>
+      </section>
+
+      <!-- General Advanced -->
+      <section>
+        <section>
+          <h3>alias(es)</h3>
+          <p>define them in line</p>
+          <p>keeping them around</p>
+        </section>
+        <section>
+          <h3>Bashrc/profile</h3>
+          <p>Setting/changing Path</p>
+          <p>Setting/changing other Env Variables</p>
+        </section>
+        <section>
+          <h3>Creating Bash Scripts</h3>
+          <p>#!/bin/bash</p>
+        </section>
+        <section>
+          <h3>glob</h3>
+          <p>ls * vs ls test*</p>
+        </section>
+        <section>
+          <h3>screen</h3>
+          <p>dealing with bad wifi</p>
+          <p>multiuser</p>
+        </section>
         </section>
 
         <!-- What's next -->
         <section>
-            <section>
-                <h3></h3>
-                <p></p>
-            </section>
+          <section>
+            <h3>Poll</h3>
+            <p>Making Websites (HTML/Javascript/CSS/python) </p>
+            <p>Automatically making linux boxes (chef) </p>
+            <p>Other</p>
+          </section>
         </section>
 
 
 
-			</div>
-  		<footer>
+      </div>
+      <footer>
         <div class="copyright">
           Girl Develop It Boise  --
           <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
         </div>
       </footer>
-		</div>
+    </div>
 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
-</html>
+  </body>
+  </html>
